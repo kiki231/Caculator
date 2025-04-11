@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- Màn hình hiển thị kết quả -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:gravity="end|center_vertical"
+        android:text="0"
+        android:textSize="40sp"
+        android:background="#E0E0E0"
+        android:padding="16dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Sử dụng GridLayout để hiển thị các nút bấm -->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:columnCount="4"
+        app:rowCount="5"
+
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            style="styles/CalcButton"
+            android:text="CE"
+            android:id="@+id/btnCE"
+            android:layout_width="100dp"
+            />
+
+        <Button
+            style="styles/CalcButton"
+            android:text="C"
+            android:id="@+id/btnC"
+            android:layout_width="100dp"
+            />
+
+        <Button
+            style="styles/CalcButton"
+            android:text="BS"
+            android:id="@+id/btnBS"
+            android:layout_width="100dp"
+            />
+
+        <Button
+            style="styles/CalcButton"
+            android:text="/"
+            android:id="@+id/btnDivide"
+            android:layout_width="100dp"
+            />
+
+        <Button
+            style="styles/CalcButton"
+            android:text="7"
+            android:id="@+id/btn7"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="8"
+            android:id="@+id/btn8"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="9"
+            android:id="@+id/btn9"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="x"
+            android:id="@+id/btnMultiply"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="4"
+            android:id="@+id/btn4"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="5"
+            android:id="@+id/btn5"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="6"
+            android:id="@+id/btn6"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="-"
+            android:id="@+id/btnMinus"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="1"
+            android:id="@+id/btn1"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="2"
+            android:id="@+id/btn2"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="3"
+            android:id="@+id/btn3"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="+"
+            android:id="@+id/btnPlus"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="+/-"
+            android:id="@+id/btnSign"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="0"
+            android:id="@+id/btn0"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:text="."
+            android:id="@+id/btnDot"
+            android:layout_width="100dp"/>
+
+        <Button
+            style="styles/CalcButton"
+            android:layout_width="100dp"
+            android:id="@+id/btnEqual"
+            android:text="=" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
